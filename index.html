@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuokokaavion teko</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vuokokaavion teko</h1>
+    <div class="instructions">
+        <p><kbd>u</kbd> = uusi solu</p>
+        <p><kbd>i</kbd> = uusi yhteys</p>
+        <p><kbd>j</kbd> = uusi ehto solu </p>
+    </div>
+
+    <div id="flowchart-editor" class="flowchart-editor">
+        <!-- Nodes and connections will be added here dynamically -->
+    </div>
+
+    <div class="toolbar">
+        <button id="add-node-btn">Lisää Solu (u)</button>
+        <button id="add-condition-btn">Lisää ehto (j)</button>
+        <button id="add-connection-btn" disabled>Lisää yhteys (i)</button>
+    </div>
+
+    <div id="connection-mode-indicator" class="connection-mode-indicator hidden">
+       Klikkaa yhdistettävää solua
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
